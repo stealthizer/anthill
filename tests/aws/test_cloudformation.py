@@ -26,12 +26,12 @@ class TestDistilDeploy(TestCase):
     def __given_arguments_pre(self):
         self.__environment_pre = 'pre'
         self.__number_pre = '9'
-        self.__test_cloudformation_pre = Cloudformation(self.__account, self.__environment_pre, self.__number_pre, self.__resource, self.__role)
+        self.__test_cloudformation_pre = Cloudformation(self.__account, self.__environment_pre, self.__number_pre, self.__role)
 
     def __given_arguments_pro(self):
         self.__environment_pro = 'pro'
         self.__number_pro = ''
-        self.__test_cloudformation_pro = Cloudformation(self.__account, self.__environment_pro, self.__number_pro, self.__resource, self.__role)
+        self.__test_cloudformation_pro = Cloudformation(self.__account, self.__environment_pro, self.__number_pro, self.__role)
 
     def __when_want_stackname_pre(self):
         self.__stackNamePre = self.__test_cloudformation_pre.get_stackName()
